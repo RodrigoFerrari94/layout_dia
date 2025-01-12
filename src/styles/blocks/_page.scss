@@ -1,0 +1,9 @@
+.page {
+  margin: 0;
+  scroll-behavior: smooth;
+  color: $color-dark-text;
+
+  &__body {
+    margin: 0;
+  }
+}

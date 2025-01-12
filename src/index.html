@@ -1,5 +1,9 @@
+<!-- #region head -->
 <!doctype html>
-<html lang="en">
+<html
+  class="page"
+  lang="en"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -8,12 +12,131 @@
     />
     <title>Dia</title>
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <h1>Dia</h1>
+  <!-- #endregion -->
+
+  <body class="page__body">
+    <header class="hero-screen">
+      <nav class="nav">
+        <div class="nav__icons">
+          <img
+            src="./images/logo/logo-air.svg"
+            alt="Logo Air"
+            class="nav__icon-logo"
+          />
+          <img
+            src="./images/features/icon-menu.svg"
+            alt="Icon Menu"
+            class="nav__icon-menu"
+          />
+        </div>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                Testimonials
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__hire-us nav__hire-us--is-active">
+          <a
+            href="#"
+            class="nav__link"
+          >
+            Hire us
+          </a>
+        </div>
+      </nav>
+      <div class="hero-screen__text">
+        <h1 class="hero-screen__title">Strategic Agency</h1>
+        <p class="hero-screen__about-us">
+          We believe in the power of bold ideas that can solve business
+          challenges.
+        </p>
+        <button class="hero-screen__button">Learn more</button>
+      </div>
+      <div class="hero-screen__photo">
+        <div class="hero-screen__photo-content">
+          <div class="hero-screen__arrows">
+            <div class="arrows-contain">
+              <img
+                src="images/slider/vector-left.svg"
+                alt="arrow left"
+                class="arrows-contain__arrow"
+              />
+            </div>
+            <div class="arrows-contain">
+              <img
+                src="images/slider/vector-right.svg"
+                alt="arrow right"
+                class="arrows-contain__arrow"
+              />
+            </div>
+          </div>
+          <h3 class="hero-screen__description-title">Intro</h3>
+          <p class="hero-screen__description">
+            By the same illusion which lifts the horizon.
+          </p>
+        </div>
+      </div>
+    </header>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

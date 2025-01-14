@@ -4,3 +4,23 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin content-padding-inline() {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 41px;
+  }
+
+  @include on-small-desktop {
+    padding-inline: 54px;
+  }
+
+  @include on-desktop {
+    padding-inline: 120px;
+  }
+
+  @include on-design {
+    padding-inline: 227px;
+  }
+}

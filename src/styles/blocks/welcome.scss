@@ -1,11 +1,11 @@
 .welcome {
   @include content-padding-inline;
 
-  margin-block: 120px;
   margin: 0 auto;
 
+  @include content-margin-top;
+
   @include on-tablet {
-    margin-block: 148px;
     max-width: 716px;
   }
 
@@ -35,7 +35,6 @@
     font-size: 22px;
     line-height: 150%;
     font-weight: 600;
-    letter-spacing: 1px;
 
     @include on-tablet {
       font-size: 24px;

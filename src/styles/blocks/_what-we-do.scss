@@ -1,0 +1,98 @@
+.what-we-do {
+  @include content-margin-top;
+  @include content-padding-inline;
+
+  background-color: #fff;
+  border-radius: 30px;
+  padding-block: 72px;
+
+  @include on-tablet {
+    padding-block: 128px;
+  }
+
+  @include on-small-desktop {
+    padding-bottom: 134px;
+  }
+
+  &__title {
+    font-family: $font-family-poppins;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+
+    @include on-tablet {
+      font-size: 52px;
+      line-height: 150%;
+    }
+  }
+
+  &__articles-content {
+    @include on-small-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+
+    @include on-tablet {
+      margin-top: 72px;
+    }
+
+    @include on-small-desktop {
+      margin: 0;
+      max-width: 214px;
+    }
+
+    @include on-desktop {
+      margin: 0;
+      max-width: 264px;
+    }
+  }
+
+  &__image {
+    width: 166px;
+    height: 166px;
+    border-radius: 15px;
+    margin-bottom: 32px;
+
+    &--branding {
+      background-image: url(../images/what-we-do/branding-bg.png);
+    }
+
+    &--communication {
+      background-image: url(../images/what-we-do/communication-bg.png);
+    }
+
+    &--strategy {
+      background-image: url(../images/what-we-do/strategy-bg.png);
+    }
+  }
+
+  &__sub-title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: $font-family-poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0;
+    max-width: 362px;
+    font-family: $font-family-open-sans;
+    color: $second-color-dark-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+  }
+}

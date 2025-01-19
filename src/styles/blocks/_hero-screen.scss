@@ -2,8 +2,9 @@
   background-color: $backgroud-black-theme;
   color: $color-light-text;
   border-radius: 0 0 30px 30px;
+  max-width: 1600px;
 
-  margin-left: auto;
+  margin: 0 auto;
   position: relative;
 
   @include on-small-desktop {

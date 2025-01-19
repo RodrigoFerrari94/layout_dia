@@ -1,7 +1,4 @@
 .what-we-do {
-  @include content-margin-top;
-  @include content-padding-inline;
-
   background-color: #fff;
   border-radius: 30px;
   padding-block: 72px;
@@ -14,23 +11,15 @@
     padding-bottom: 134px;
   }
 
-  &__title {
-    font-family: $font-family-poppins;
-    font-size: 44px;
-    font-weight: 600;
-    line-height: 120%;
-    text-align: center;
-
-    @include on-tablet {
-      font-size: 52px;
-      line-height: 150%;
-    }
-  }
-
   &__articles-content {
     @include on-small-desktop {
       display: flex;
       justify-content: space-between;
+    }
+
+    @include on-design {
+      max-width: 1148px;
+      margin: 0 auto;
     }
   }
 
@@ -88,11 +77,5 @@
   &__description {
     margin: 0;
     max-width: 362px;
-    font-family: $font-family-open-sans;
-    color: $second-color-dark-text;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: center;
   }
 }

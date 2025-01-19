@@ -1,3 +1,77 @@
 .main {
   padding-bottom: 120px;
+
+  @include on-design {
+    margin: 0 auto;
+  }
+  &__section {
+    @include content-padding-inline;
+
+    margin-top: 120px;
+
+    @include on-tablet {
+      margin-top: 148px;
+    }
+  }
+
+  &__title-medium {
+    margin: 0;
+    text-align: left;
+    font-family: $font-family-poppins;
+    font-size: 32px;
+    line-height: 150%;
+    font-weight: 600;
+
+    @include on-tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title-large {
+    font-family: $font-family-poppins;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+
+    @include on-tablet {
+      font-size: 52px;
+      line-height: 150%;
+    }
+  }
+
+  &__text-medium {
+    margin: 0;
+    font-family: $font-family-open-sans;
+    color: $second-color-dark-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__text-large {
+    text-align: center;
+    font-family: $font-family-open-sans;
+    color: $second-color-dark-text;
+    font-size: 22px;
+    line-height: 150%;
+    font-weight: 600;
+
+    @include on-tablet {
+      font-size: 24px;
+      letter-spacing: 0.4px;
+    }
+  }
+
+  &__name-section {
+    margin-bottom: 16px;
+    font-family: $font-family-poppins;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 3px;
+    color: #c0cdd7;
+    text-transform: uppercase;
+  }
 }

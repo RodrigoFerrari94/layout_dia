@@ -1,33 +1,14 @@
 .process {
-  @include on-tablet {
-    margin-inline: auto;
-    max-width: 640px;
-  }
-
   @include on-small-desktop {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 100%;
     margin-top: 287px;
-    margin-inline: 0;
-  }
-
-  @include on-design {
-    max-width: 1148px;
-    margin-inline: auto;
   }
 
   &__text-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-bottom: 48px;
-
     @include on-tablet {
       max-width: 263.5px;
-      margin-bottom: 56px;
     }
 
     @include on-small-desktop {
@@ -62,8 +43,7 @@
     max-width: 600px;
 
     @include on-tablet {
-      flex-flow: wrap;
-      flex-direction: row;
+      flex-flow: row wrap;
       gap: 30px;
     }
 

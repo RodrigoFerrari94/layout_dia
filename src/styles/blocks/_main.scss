@@ -1,9 +1,25 @@
 .main {
   padding-bottom: 120px;
+  margin-inline: auto;
+  max-width: 320px;
+
+  @include on-tablet {
+    max-width: 650px;
+  }
+
+  @include on-small-desktop {
+    max-width: 1024px;
+    margin-inline: auto;
+  }
+
+  @include on-desktop {
+    max-width: 1260px;
+  }
 
   @include on-design {
-    margin: 0 auto;
+    max-width: 1600px;
   }
+
   &__section {
     @include content-padding-inline;
 
@@ -11,6 +27,18 @@
 
     @include on-tablet {
       margin-top: 148px;
+    }
+  }
+
+  &__text-content {
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
+
+    @include on-small-desktop {
+      margin-bottom: 85px;
     }
   }
 

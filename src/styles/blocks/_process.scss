@@ -6,6 +6,11 @@
     margin-top: 287px;
   }
 
+  @include on-design {
+    max-width: 1148px;
+    margin-inline: auto;
+  }
+
   &__text-content {
     @include on-tablet {
       max-width: 263.5px;

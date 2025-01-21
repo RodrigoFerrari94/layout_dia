@@ -1,0 +1,83 @@
+.call-to-action {
+  position: relative;
+  background: #fff;
+  padding-block: 72px;
+  overflow: hidden;
+
+  @include on-tablet {
+    padding-block: 228px;
+  }
+
+  @include on-small-desktop {
+    padding-block: 297px;
+  }
+
+  &__shapes {
+    position: absolute;
+
+    @include on-tablet {
+      width: 100%;
+      top: 63px;
+      left: -2px;
+      height: 509px;
+      background-image: url(../images/shapes-bg-tablet.png);
+      background-size: cover;
+      background-position: center;
+    }
+
+    @include on-small-desktop {
+      height: 489px;
+      background-image: url(../images/shapes.png);
+      top: 83px;
+    }
+
+    @include on-desktop {
+      height: 547px;
+      width: 1451px;
+      top: -110px;
+      left: -325px;
+    }
+  }
+
+  &__content {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+
+    @include on-tablet {
+      width: 558px;
+      margin-top: -28px;
+    }
+
+    @include on-small-desktop {
+      width: 764px;
+      margin-top: -98px;
+    }
+
+    @include on-desktop {
+      position: relative;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include on-tablet {
+      line-height: 120%;
+    }
+
+    @include on-small-desktop {
+      line-height: 150%;
+    }
+  }
+
+  &__text {
+    margin-bottom: 56px;
+
+    @include on-tablet {
+      margin-bottom: 64px;
+    }
+  }
+}

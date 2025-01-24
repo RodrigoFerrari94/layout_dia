@@ -24,3 +24,28 @@
     padding-inline: 227px;
   }
 }
+
+@mixin button-style() {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  color: #fff;
+
+  font-family: $font-family-poppins;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+
+  @include on-tablet {
+    width: 264px;
+  }
+}
+
+@mixin content-text-cards {
+  font-family: $font-family-poppins;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}

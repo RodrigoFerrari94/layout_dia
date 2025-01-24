@@ -26,17 +26,27 @@
       gap: 20px;
     }
 
-    @include on-desktop {
+    @include on-design {
       gap: 30px;
     }
   }
 
   &__card {
+    width: 280px;
+
+    @include on-tablet {
+      width: 558px;
+    }
+
     @include on-small-desktop {
       width: 292px;
     }
 
-    @include on-small-desktop {
+    @include on-desktop {
+      width: 342px;
+    }
+
+    @include on-design {
       width: 362px;
     }
   }

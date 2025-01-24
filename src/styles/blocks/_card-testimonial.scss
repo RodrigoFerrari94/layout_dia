@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #fff;
   border-radius: 10px;
-  padding: 32px 42px;
+  padding-block: 32px;
 
   &__top-bar {
     display: flex;
@@ -48,8 +48,7 @@
     position: absolute;
     width: 55.6%;
     height: 22.4%;
-    background-color: $background-blue-theme;
-    border-radius: 12px;
+    background-color: $background-blue-page;
 
     &--top {
       transform-origin: left bottom;
@@ -88,21 +87,19 @@
 
   &__quot-text {
     margin: 0;
-    text-align: center;
+
+    @include content-text-cards;
+
     font-family: $font-family-open-sans;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 20px;
-    color: $second-color-dark-text;
+    color: $second-color-text;
   }
 
   &__identification {
     margin-top: 32px;
-    text-align: center;
+
+    @include content-text-cards;
+
     font-family: $font-family-open-sans;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 20px;
   }
 
   &__name {

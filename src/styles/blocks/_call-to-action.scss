@@ -5,17 +5,24 @@
   overflow: hidden;
 
   @include on-tablet {
-    padding-block: 228px;
+    padding-block: 0;
+    height: 796px;
   }
 
   @include on-small-desktop {
-    padding-block: 297px;
+    height: 888px;
+  }
+
+  @include on-desktop {
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   &__shapes {
-    position: absolute;
-
     @include on-tablet {
+      position: absolute;
+
       width: 100%;
       top: 63px;
       left: -2px;
@@ -32,10 +39,12 @@
     }
 
     @include on-desktop {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-top: 72px;
       height: 547px;
-      width: 1451px;
-      top: -110px;
-      left: -325px;
+      max-width: 1471;
     }
   }
 
@@ -48,16 +57,17 @@
 
     @include on-tablet {
       width: 558px;
-      margin-top: -28px;
+      margin-top: 137px;
     }
 
     @include on-small-desktop {
-      width: 764px;
-      margin-top: -98px;
+      margin-top: 116px;
+      width: 754px;
     }
 
     @include on-desktop {
-      position: relative;
+      margin-top: 127px;
+      width: 754px;
     }
   }
 
@@ -79,5 +89,9 @@
     @include on-tablet {
       margin-bottom: 64px;
     }
+  }
+
+  &__button {
+    line-height: 56px;
   }
 }

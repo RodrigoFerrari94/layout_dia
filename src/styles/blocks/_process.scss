@@ -75,8 +75,14 @@
     @include on-tablet {
       width: 232px;
 
-      &--translate {
+      &--translate-scale {
         transform: translateY(-50%);
+
+        @include hover(transform, translateY(-50%) scale(1.2));
+      }
+
+      &--scale {
+        @include hover(transform, scale(1.2));
       }
     }
 
@@ -101,11 +107,10 @@
     height: 22px;
     border-radius: 50px;
 
+    @include content-text-cards;
+
     font-family: $font-family-poppins;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 150%;
-    color: $background-blue-theme;
+    color: $background-blue-page;
   }
 
   &__list {
@@ -115,11 +120,10 @@
   }
 
   &__item {
+    @include content-text-cards;
+
     font-family: $font-family-open-sans;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 20px;
-    color: $second-color-dark-text;
+    color: $second-color-text;
   }
 
   &__button {
@@ -144,7 +148,7 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-color: $background-blue-theme;
+    background-color: $background-blue-page;
     transition: 0.3s;
   }
 

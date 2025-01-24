@@ -1,20 +1,40 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  font-family: $font-family-roboto;
+  font-family: $font-family-poppins;
+  align-items: center;
 
-  @include content-padding-inline;
+  &--header {
+    @include content-padding-inline;
 
-  padding-top: 20px;
+    padding-top: 20px;
 
-  @include on-small-desktop {
-    padding-block: 0;
-    height: 120px;
-    align-items: center;
+    @include on-small-desktop {
+      padding-top: 48px;
+    }
+
+    @include on-design {
+      max-width: 1146px;
+      margin-inline: auto;
+    }
   }
 
-  @include on-design {
-    align-items: center;
+  &--footer {
+    flex-direction: column;
+    gap: 48px;
+    align-items: start;
+    margin-top: 80px;
+
+    @include on-tablet {
+      margin-top: 139px;
+      gap: 48px;
+    }
+
+    @include on-small-desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 104px;
+    }
   }
 
   &__icons {
@@ -30,10 +50,12 @@
   }
 
   &__menu {
-    display: none;
+    &--header {
+      display: none;
 
-    @include on-small-desktop {
-      display: flex;
+      @include on-small-desktop {
+        display: block;
+      }
     }
   }
 
@@ -41,8 +63,25 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
-    gap: 48px;
+    flex-direction: column;
+    gap: 24px;
+
+    @include on-tablet {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    &--header {
+      @include on-small-desktop {
+        gap: 48px;
+      }
+    }
+
+    &--footer {
+      @include on-small-desktop {
+        gap: 64px;
+      }
+    }
   }
 
   &__item {
@@ -55,7 +94,7 @@
     color: $color-light-text;
     font-size: 13px;
     line-height: 150%;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-weight: 700;
     text-align: center;
   }
@@ -72,7 +111,7 @@
       width: 100%;
       height: 2px;
       border-radius: 4px;
-      background-color: $background-blue-theme;
+      background-color: $background-blue-page;
 
       @include on-small-desktop {
         bottom: -10px;

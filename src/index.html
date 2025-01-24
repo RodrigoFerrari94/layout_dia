@@ -10,7 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -24,16 +24,9 @@
       rel="stylesheet"
     />
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
+      rel="icon"
+      href="./images/logo/logo-air.svg"
+      type="image/x-icon"
     />
 
     <link
@@ -42,10 +35,9 @@
     />
   </head>
   <!-- #endregion -->
-
   <body class="page__body">
     <header class="hero-screen">
-      <nav class="nav">
+      <nav class="nav nav--header">
         <div class="nav__icons">
           <img
             src="./images/logo/logo-air.svg"
@@ -58,11 +50,11 @@
             class="nav__icon-menu"
           />
         </div>
-        <div class="nav__menu">
-          <ul class="nav__list">
+        <div class="nav__menu nav__menu--header">
+          <ul class="nav__list nav__list--header">
             <li class="nav__item">
               <a
-                href="#"
+                href="#about-us"
                 class="nav__link"
               >
                 About us
@@ -70,7 +62,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#"
+                href="#services"
                 class="nav__link"
               >
                 Services
@@ -78,7 +70,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#"
+                href="#testimonials"
                 class="nav__link"
               >
                 Testimonials
@@ -86,7 +78,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="#"
+                href="#contact-us"
                 class="nav__link"
               >
                 Contact Us
@@ -96,7 +88,7 @@
         </div>
         <div class="nav__hire-us nav__hire-us--is-active">
           <a
-            href="#"
+            href="#contact-us"
             class="nav__link"
           >
             Hire us
@@ -140,7 +132,10 @@
       </div>
     </header>
     <main class="main">
-      <section class="main__section welcome">
+      <section
+        class="main__section welcome"
+        id="about-us"
+      >
         <h2 class="main__title-medium welcome__title">Who we are</h2>
         <p class="main__text-large welcome__text">
           We embrace a strategic approach to creative ideas. We are interested
@@ -149,7 +144,10 @@
           business challenges.
         </p>
       </section>
-      <section class="main__section what-we-do">
+      <section
+        class="main__section what-we-do"
+        id="work"
+      >
         <h2 class="main__title-large what-we-do__title">Our expertise</h2>
         <div class="what-we-do__articles-content">
           <article class="what-we-do__article">
@@ -181,7 +179,10 @@
           </article>
         </div>
       </section>
-      <section class="main__section process">
+      <section
+        class="main__section process"
+        id="services"
+      >
         <div class="main__text-content process__text-content">
           <div class="process__name-section main__name-section">Services</div>
           <h2 class="main__title-medium process__title">
@@ -198,7 +199,7 @@
           </div>
         </div>
         <div class="process__cards">
-          <div class="process__card">
+          <div class="process__card process__card--scale">
             <p class="process__number">001</p>
             <ul class="process__list">
               <li class="process__item">Brand Development</li>
@@ -207,7 +208,7 @@
               <li class="process__item">Packaging</li>
             </ul>
             <a
-              href="#"
+              href="#work"
               class="process__button"
             >
               <span class="process__content-arrow">
@@ -220,7 +221,7 @@
               Learn More
             </a>
           </div>
-          <div class="process__card process__card--translate">
+          <div class="process__card process__card--translate-scale">
             <p class="process__number">002</p>
             <ul class="process__list">
               <li class="process__item">Сontent Production</li>
@@ -229,7 +230,7 @@
               <li class="process__item">Post Production</li>
             </ul>
             <a
-              href="#"
+              href="#work"
               class="process__button"
             >
               <span class="process__content-arrow">
@@ -242,7 +243,7 @@
               Learn More
             </a>
           </div>
-          <div class="process__card">
+          <div class="process__card process__card--scale">
             <p class="process__number">003</p>
             <ul class="process__list">
               <li class="process__item">Marketing Strategy</li>
@@ -251,7 +252,7 @@
               <li class="process__item">Blog Content & SEO</li>
             </ul>
             <a
-              href="#"
+              href="#work"
               class="process__button"
             >
               <span class="process__content-arrow">
@@ -264,7 +265,7 @@
               Learn More
             </a>
           </div>
-          <div class="process__card process__card--translate">
+          <div class="process__card process__card--translate-scale">
             <p class="process__number">004</p>
             <ul class="process__list">
               <li class="process__item">Digital Communications</li>
@@ -273,7 +274,7 @@
               <li class="process__item">Strategic Partnerships</li>
             </ul>
             <a
-              href="#"
+              href="#work"
               class="process__button"
             >
               <span class="process__content-arrow">
@@ -288,7 +289,10 @@
           </div>
         </div>
       </section>
-      <section class="main__section testimonials">
+      <section
+        class="main__section testimonials"
+        id="testimonials"
+      >
         <div class="main__text-content testimonials__text-content">
           <div class="main__name-section">Testimonials</div>
           <h2 class="main__title-medium testimonials__title">
@@ -393,19 +397,188 @@
         </div>
       </section>
       <section class="main__section call-to-action">
-        <div class="call-to-action__content">
-          <div class="call-to-action__shapes"></div>
-          <h2 class="main__title-large call-to-action__title">
-            Vision, Passion, Results
-          </h2>
-          <p class="main__text-large call-to-action__text">
-            We are sure that first-rate job is possible only if all three
-            components are united.
-          </p>
-          <button class="main__button call-to-action__button">Apply</button>
+        <div class="call-to-action__shapes">
+          <div class="call-to-action__content">
+            <h2 class="main__title-large call-to-action__title">
+              Vision, Passion, Results
+            </h2>
+            <p class="main__text-large call-to-action__text">
+              We are sure that first-rate job is possible only if all three
+              components are united.
+            </p>
+            <a
+              href="#contact-us"
+              class="main__button call-to-action__button"
+            >
+              Apply
+            </a>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div
+        class="footer__contact"
+        id="contact-us"
+      >
+        <form
+          class="send-us-a-message"
+          onsubmit="this.reset(); window.scrollTo({ top: 0, behavior: 'smooth' }); return false;"
+        >
+          <h2 class="footer__title send-us-a-message__title">
+            Send us a message
+          </h2>
+
+          <div class="send-us-a-message__inputs">
+            <input
+              class="send-us-a-message__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your e-mail"
+              required
+            />
+
+            <input
+              class="send-us-a-message__input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Your name"
+              required
+            />
+
+            <textarea
+              class="send-us-a-message__input send-us-a-message__input--text-area"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Your message"
+              rows="1"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="send-us-a-message__button"
+          >
+            Send
+          </button>
+        </form>
+        <div class="contact-us">
+          <h2 class="footer__title contact-us__title">Contact us</h2>
+
+          <address class="contact-us__address">
+            <div class="contact-us__field">
+              <p class="contact-us__label">Call us</p>
+              <a
+                class="contact-us__link"
+                href="tel:654 321 987"
+              >
+                654 321 987
+              </a>
+            </div>
+
+            <div class="contact-us__field">
+              <p class="contact-us__label">Visit us</p>
+              <a
+                class="contact-us__link"
+                href="https://maps.app.goo.gl/mQpeS8wuYwttA9Dj6"
+                target="_blank"
+              >
+                2905 West Drive, Buffalo Grove
+              </a>
+            </div>
+            <div class="contact-us__field">
+              <p class="contact-us__label">our socials</p>
+              <div class="contact-us__social-link-content">
+                <a
+                  class="contact-us__link"
+                  href="#"
+                >
+                  <img
+                    class="contact-us__icon-social"
+                    src="./images/features/icons-social-media/facebook.svg"
+                    alt="facebook link"
+                  />
+                </a>
+                <a
+                  class="contact-us__link"
+                  href="#"
+                >
+                  <img
+                    class="contact-us__icon-social"
+                    src="./images/features/icons-social-media/twitter.svg"
+                    alt="twitter link"
+                  />
+                </a>
+                <a
+                  class="contact-us__link"
+                  href="#"
+                >
+                  <img
+                    class="contact-us__icon-social"
+                    src="./images/features/icons-social-media/instagram.svg"
+                    alt="instagram link"
+                  />
+                </a>
+              </div>
+            </div>
+          </address>
+        </div>
+      </div>
+      <nav class="nav nav--footer">
+        <img
+          src="./images/logo/logo-air.svg"
+          alt="Logo Air"
+          class="nav__icon-logo"
+        />
+        <div class="nav__menu nav__menu--footer">
+          <ul class="nav__list nav__list--footer">
+            <li class="nav__item">
+              <a
+                href="#about-us"
+                class="nav__link"
+              >
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#work"
+                class="nav__link"
+              >
+                Work
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#services"
+                class="nav__link"
+              >
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="#contact-us"
+                class="nav__link"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
 
     <script src="scripts/main.js"></script>
   </body>

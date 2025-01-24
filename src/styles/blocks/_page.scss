@@ -1,7 +1,9 @@
 .page {
   margin: 0;
+  transition: all 0.3;
   scroll-behavior: smooth;
-  color: $first-color-dark-text;
+
+  color: $first-color-text;
 
   &__body {
     margin: 0;

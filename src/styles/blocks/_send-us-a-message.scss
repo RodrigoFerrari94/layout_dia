@@ -58,6 +58,7 @@
   &__button {
     @include button-style;
 
+    cursor: pointer;
     background-color: #144ed4;
     border: 1px solid #144ed4;
     max-width: 342px;

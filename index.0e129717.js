@@ -1,0 +1,2 @@
+const e=document.querySelector(".dropdown"),t=e.querySelector(".dropdown__trigger"),o=e.querySelector(".dropdown__content");o.style.display="none",t.addEventListener("click",t=>{t.preventDefault(),o.style.display="block",e.classList.toggle("dropdown--active")}),document.addEventListener("click",o=>{t.contains(o.target)||e.classList.remove("dropdown--active")});
+//# sourceMappingURL=index.0e129717.js.map

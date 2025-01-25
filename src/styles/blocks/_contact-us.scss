@@ -47,4 +47,34 @@
     padding-top: 16px;
     gap: 32px;
   }
+
+  &__icon-social-hover {
+    display: none;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__facebook:hover &__icon-social-hover {
+    display: block;
+  }
+
+  &__facebook:hover &__icon-social {
+    display: none;
+  }
+
+  &__twitter:hover &__icon-social-hover {
+    display: block;
+  }
+
+  &__twitter:hover &__icon-social {
+    display: none;
+  }
+
+  &__instagram:hover &__icon-social-hover {
+    display: block;
+  }
+
+  &__instagram:hover &__icon-social {
+    display: none;
+  }
 }

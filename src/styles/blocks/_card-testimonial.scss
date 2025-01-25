@@ -38,10 +38,16 @@
   }
 
   &__photo {
+    transition: $transition-page;
     z-index: 2;
     border-radius: 50%;
     width: 56%;
     height: 56%;
+  }
+
+  &:hover &__photo {
+    transition: $transition-page;
+    transform: scale(1.2);
   }
 
   &__rectangle {
@@ -51,6 +57,7 @@
     background-color: $background-blue-page;
 
     &--top {
+      transition: all $transition-page;
       transform-origin: left bottom;
       transform: rotate(-60deg);
       top: 40%;
@@ -58,11 +65,18 @@
     }
 
     &--bottom {
+      transition: all $transition-page;
       transform-origin: right top;
       transform: rotate(-60deg);
       bottom: 40%;
       right: 26%;
     }
+  }
+
+  &:hover &__rectangle {
+    transition: all $transition-page;
+    transform: scale(1.2);
+    transform: rotate(-90deg);
   }
 
   &__quot-content {

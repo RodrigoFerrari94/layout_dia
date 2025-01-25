@@ -43,7 +43,7 @@
     gap: 20px;
   }
 
-  &__icon-menu {
+  &__icon-dropdown {
     @include on-small-desktop {
       display: none;
     }
@@ -84,11 +84,19 @@
     }
   }
 
+  &__icon-logo {
+    @include hover(transform, scale(1.2));
+  }
+
   &__item {
     list-style: none;
+
+    @include hover(transform, scale(1.1));
   }
 
   &__link {
+    @include hover(transform, scale(1.1));
+
     text-decoration: none;
     text-transform: uppercase;
     color: $color-light-text;

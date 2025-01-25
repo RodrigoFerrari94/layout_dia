@@ -1,6 +1,9 @@
 .testimonials {
   max-width: 1146px;
   margin-inline: auto;
+  display: flex;
+  justify-content: center;
+
   &__text-content {
     @include on-tablet {
       max-width: 235px;

@@ -44,11 +44,51 @@
             alt="Logo Air"
             class="nav__icon-logo"
           />
-          <img
-            src="./images/features/icon-menu.svg"
-            alt="Icon Menu"
-            class="nav__icon-menu"
-          />
+          <div class="dropdown dropdown--active">
+            <button class="dropdown__trigger">
+              <img
+                src="./images/features/icon-menu.svg"
+                alt="Icon Menu"
+                class="nav__icon-dropdown"
+              />
+            </button>
+            <div class="dropdown__content">
+              <ul class="nav__list nav__list--header dropdown__list">
+                <li class="nav__item">
+                  <a
+                    href="#about-us"
+                    class="nav__link"
+                  >
+                    About us
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="#services"
+                    class="nav__link"
+                  >
+                    Services
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="#testimonials"
+                    class="nav__link"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="#contact-us"
+                    class="nav__link"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="nav__menu nav__menu--header">
           <ul class="nav__list nav__list--header">
@@ -112,9 +152,13 @@
                 src="images/slider/vector-left.svg"
                 alt="arrow left"
                 class="arrows-contain__arrow"
+                id="arrowLeft"
               />
             </div>
-            <div class="arrows-contain">
+            <div
+              class="arrows-contain"
+              id="arrowRight"
+            >
               <img
                 src="images/slider/vector-right.svg"
                 alt="arrow right"
@@ -183,109 +227,111 @@
         class="main__section process"
         id="services"
       >
-        <div class="main__text-content process__text-content">
-          <div class="process__name-section main__name-section">Services</div>
-          <h2 class="main__title-medium process__title">
-            Air is a full service creative agency
-          </h2>
-          <div class="process__content-description">
-            <p class="main__text-medium process__description">
-              Deep analytics, strong strategy and bright creative ideas.
-            </p>
-            <p class="main__text-medium process__description">
-              We are sure that first-rate job is possible only if all three
-              components are united.
-            </p>
+        <div class="process__content">
+          <div class="main__text-content process__text-content">
+            <div class="process__name-section main__name-section">Services</div>
+            <h2 class="main__title-medium process__title">
+              Air is a full service creative agency
+            </h2>
+            <div class="process__content-description">
+              <p class="main__text-medium process__description">
+                Deep analytics, strong strategy and bright creative ideas.
+              </p>
+              <p class="main__text-medium process__description">
+                We are sure that first-rate job is possible only if all three
+                components are united.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="process__cards">
-          <div class="process__card process__card--scale">
-            <p class="process__number">001</p>
-            <ul class="process__list">
-              <li class="process__item">Brand Development</li>
-              <li class="process__item">Copywriting</li>
-              <li class="process__item">Logo & Webite Design</li>
-              <li class="process__item">Packaging</li>
-            </ul>
-            <a
-              href="#work"
-              class="process__button"
-            >
-              <span class="process__content-arrow">
-                <img
-                  src="./images/features/vector-white.svg"
-                  alt="arrow link"
-                  class="process__arrow"
-                />
-              </span>
-              Learn More
-            </a>
-          </div>
-          <div class="process__card process__card--translate-scale">
-            <p class="process__number">002</p>
-            <ul class="process__list">
-              <li class="process__item">Сontent Production</li>
-              <li class="process__item">Graphic Design</li>
-              <li class="process__item">Video Production</li>
-              <li class="process__item">Post Production</li>
-            </ul>
-            <a
-              href="#work"
-              class="process__button"
-            >
-              <span class="process__content-arrow">
-                <img
-                  src="./images/features/vector-white.svg"
-                  alt="arrow link"
-                  class="process__arrow"
-                />
-              </span>
-              Learn More
-            </a>
-          </div>
-          <div class="process__card process__card--scale">
-            <p class="process__number">003</p>
-            <ul class="process__list">
-              <li class="process__item">Marketing Strategy</li>
-              <li class="process__item">Email Marketing</li>
-              <li class="process__item">Paid Advertising</li>
-              <li class="process__item">Blog Content & SEO</li>
-            </ul>
-            <a
-              href="#work"
-              class="process__button"
-            >
-              <span class="process__content-arrow">
-                <img
-                  src="./images/features/vector-white.svg"
-                  alt="arrow link"
-                  class="process__arrow"
-                />
-              </span>
-              Learn More
-            </a>
-          </div>
-          <div class="process__card process__card--translate-scale">
-            <p class="process__number">004</p>
-            <ul class="process__list">
-              <li class="process__item">Digital Communications</li>
-              <li class="process__item">Influencer Marketing</li>
-              <li class="process__item">Product Placements</li>
-              <li class="process__item">Strategic Partnerships</li>
-            </ul>
-            <a
-              href="#work"
-              class="process__button"
-            >
-              <span class="process__content-arrow">
-                <img
-                  src="./images/features/vector-white.svg"
-                  alt="arrow link"
-                  class="process__arrow"
-                />
-              </span>
-              Learn More
-            </a>
+          <div class="process__cards">
+            <div class="process__card">
+              <p class="process__number">001</p>
+              <ul class="process__list">
+                <li class="process__item">Brand Development</li>
+                <li class="process__item">Copywriting</li>
+                <li class="process__item">Logo & Webite Design</li>
+                <li class="process__item">Packaging</li>
+              </ul>
+              <a
+                href="#work"
+                class="process__button"
+              >
+                <span class="process__content-arrow">
+                  <img
+                    src="./images/features/vector-white.svg"
+                    alt="arrow link"
+                    class="process__arrow"
+                  />
+                </span>
+                Learn More
+              </a>
+            </div>
+            <div class="process__card process__card--translate">
+              <p class="process__number">002</p>
+              <ul class="process__list">
+                <li class="process__item">Сontent Production</li>
+                <li class="process__item">Graphic Design</li>
+                <li class="process__item">Video Production</li>
+                <li class="process__item">Post Production</li>
+              </ul>
+              <a
+                href="#work"
+                class="process__button"
+              >
+                <span class="process__content-arrow">
+                  <img
+                    src="./images/features/vector-white.svg"
+                    alt="arrow link"
+                    class="process__arrow"
+                  />
+                </span>
+                Learn More
+              </a>
+            </div>
+            <div class="process__card">
+              <p class="process__number">003</p>
+              <ul class="process__list">
+                <li class="process__item">Marketing Strategy</li>
+                <li class="process__item">Email Marketing</li>
+                <li class="process__item">Paid Advertising</li>
+                <li class="process__item">Blog Content & SEO</li>
+              </ul>
+              <a
+                href="#work"
+                class="process__button"
+              >
+                <span class="process__content-arrow">
+                  <img
+                    src="./images/features/vector-white.svg"
+                    alt="arrow link"
+                    class="process__arrow"
+                  />
+                </span>
+                Learn More
+              </a>
+            </div>
+            <div class="process__card process__card--translate">
+              <p class="process__number">004</p>
+              <ul class="process__list">
+                <li class="process__item">Digital Communications</li>
+                <li class="process__item">Influencer Marketing</li>
+                <li class="process__item">Product Placements</li>
+                <li class="process__item">Strategic Partnerships</li>
+              </ul>
+              <a
+                href="#work"
+                class="process__button"
+              >
+                <span class="process__content-arrow">
+                  <img
+                    src="./images/features/vector-white.svg"
+                    alt="arrow link"
+                    class="process__arrow"
+                  />
+                </span>
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -293,21 +339,87 @@
         class="main__section testimonials"
         id="testimonials"
       >
-        <div class="main__text-content testimonials__text-content">
-          <div class="main__name-section">Testimonials</div>
-          <h2 class="main__title-medium testimonials__title">
-            What people&nbsp;say
-          </h2>
-        </div>
-        <div class="testimonials__cards">
-          <div class="testimonials__card card-testimonial">
-            <div class="card-testimonial__top-bar">
+        <div class="testimonials__content">
+          <div class="main__text-content testimonials__text-content">
+            <div class="main__name-section">Testimonials</div>
+            <h2 class="main__title-medium testimonials__title">
+              What people&nbsp;say
+            </h2>
+          </div>
+          <div class="testimonials__cards">
+            <div class="testimonials__card card-testimonial">
+              <div class="card-testimonial__top-bar">
+                <div class="card-testimonial__photo-content">
+                  <div
+                    class="card-testimonial__rectangle card-testimonial__rectangle--top"
+                  ></div>
+                  <img
+                    src="./images/testimonials/photo-testimonial1.png"
+                    alt="photo perfil"
+                    class="card-testimonial__photo"
+                  />
+                  <div
+                    class="card-testimonial__rectangle card-testimonial__rectangle--bottom"
+                  ></div>
+                </div>
+                <div class="card-testimonial__quot-content">
+                  <img
+                    src="./images/features/quot.svg"
+                    alt="quot"
+                    class="card-testimonial__quot-img"
+                  />
+                  <p class="card-testimonial__quot-text">
+                    AIR’s ideas are refreshing and out of the box. Authentic
+                    team that focuses on the important path of the brand.
+                  </p>
+                </div>
+              </div>
+              <div class="card-testimonial__identification">
+                <p class="card-testimonial__name">Tal Gilad</p>
+                <p class="card-testimonial__ocupation">Teach for America</p>
+              </div>
+            </div>
+            <div class="testimonials__card card-testimonial">
+              <div class="card-testimonial__top-bar">
+                <div class="card-testimonial__photo-content">
+                  <div
+                    class="card-testimonial__rectangle card-testimonial__rectangle--top"
+                  ></div>
+                  <img
+                    src="./images/testimonials/photo-testimonial2.jpg"
+                    alt="photo perfil"
+                    class="card-testimonial__photo"
+                  />
+                  <div
+                    class="card-testimonial__rectangle card-testimonial__rectangle--bottom"
+                  ></div>
+                </div>
+                <div class="card-testimonial__quot-content">
+                  <img
+                    src="./images/features/quot.svg"
+                    alt="quot"
+                    class="card-testimonial__quot-img"
+                  />
+                  <p class="card-testimonial__quot-text">
+                    AIR is an exceptional agency that leads with creative
+                    talent, first-class account servicing.
+                  </p>
+                </div>
+              </div>
+              <div class="card-testimonial__identification">
+                <p class="card-testimonial__name">Azadeh Hawkins</p>
+                <p class="card-testimonial__ocupation">
+                  Hawkins&nbsp;Consulting
+                </p>
+              </div>
+            </div>
+            <div class="testimonials__card card-testimonial">
               <div class="card-testimonial__photo-content">
                 <div
                   class="card-testimonial__rectangle card-testimonial__rectangle--top"
                 ></div>
                 <img
-                  src="./images/testimonials/photo-testimonial1.png"
+                  src="./images/testimonials/photo-testimonial3.png"
                   alt="photo perfil"
                   class="card-testimonial__photo"
                 />
@@ -322,76 +434,14 @@
                   class="card-testimonial__quot-img"
                 />
                 <p class="card-testimonial__quot-text">
-                  AIR’s ideas are refreshing and out of the box. Authentic team
-                  that focuses on the important path of the brand.
+                  AIR raises the agency bar to stratospheric heights on both
+                  creative output and client service.
                 </p>
               </div>
-            </div>
-            <div class="card-testimonial__identification">
-              <p class="card-testimonial__name">Tal Gilad</p>
-              <p class="card-testimonial__ocupation">Teach for America</p>
-            </div>
-          </div>
-          <div class="testimonials__card card-testimonial">
-            <div class="card-testimonial__top-bar">
-              <div class="card-testimonial__photo-content">
-                <div
-                  class="card-testimonial__rectangle card-testimonial__rectangle--top"
-                ></div>
-                <img
-                  src="./images/testimonials/photo-testimonial2.jpg"
-                  alt="photo perfil"
-                  class="card-testimonial__photo"
-                />
-                <div
-                  class="card-testimonial__rectangle card-testimonial__rectangle--bottom"
-                ></div>
+              <div class="card-testimonial__identification">
+                <p class="card-testimonial__name">Michel Grover</p>
+                <p class="card-testimonial__ocupation">Hulu</p>
               </div>
-              <div class="card-testimonial__quot-content">
-                <img
-                  src="./images/features/quot.svg"
-                  alt="quot"
-                  class="card-testimonial__quot-img"
-                />
-                <p class="card-testimonial__quot-text">
-                  AIR is an exceptional agency that leads with creative talent,
-                  first-class account servicing.
-                </p>
-              </div>
-            </div>
-            <div class="card-testimonial__identification">
-              <p class="card-testimonial__name">Azadeh Hawkins</p>
-              <p class="card-testimonial__ocupation">Hawkins&nbsp;Consulting</p>
-            </div>
-          </div>
-          <div class="testimonials__card card-testimonial">
-            <div class="card-testimonial__photo-content">
-              <div
-                class="card-testimonial__rectangle card-testimonial__rectangle--top"
-              ></div>
-              <img
-                src="./images/testimonials/photo-testimonial3.png"
-                alt="photo perfil"
-                class="card-testimonial__photo"
-              />
-              <div
-                class="card-testimonial__rectangle card-testimonial__rectangle--bottom"
-              ></div>
-            </div>
-            <div class="card-testimonial__quot-content">
-              <img
-                src="./images/features/quot.svg"
-                alt="quot"
-                class="card-testimonial__quot-img"
-              />
-              <p class="card-testimonial__quot-text">
-                AIR raises the agency bar to stratospheric heights on both
-                creative output and client service.
-              </p>
-            </div>
-            <div class="card-testimonial__identification">
-              <p class="card-testimonial__name">Michel Grover</p>
-              <p class="card-testimonial__ocupation">Hulu</p>
             </div>
           </div>
         </div>
@@ -496,31 +546,52 @@
                   class="contact-us__link"
                   href="#"
                 >
-                  <img
-                    class="contact-us__icon-social"
-                    src="./images/features/icons-social-media/facebook.svg"
-                    alt="facebook link"
-                  />
+                  <div class="contact-us__facebook">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./images/features/icons-social-media/facebook.svg"
+                      alt="facebook link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./images/features/icons-social-media/facebook-blue.svg"
+                      alt="facebook link"
+                    />
+                  </div>
                 </a>
                 <a
                   class="contact-us__link"
                   href="#"
                 >
-                  <img
-                    class="contact-us__icon-social"
-                    src="./images/features/icons-social-media/twitter.svg"
-                    alt="twitter link"
-                  />
+                  <div class="contact-us__twitter">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./images/features/icons-social-media/twitter.svg"
+                      alt="twitter link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./images/features/icons-social-media/twitter-blue.svg"
+                      alt="twitter link"
+                    />
+                  </div>
                 </a>
                 <a
                   class="contact-us__link"
                   href="#"
                 >
-                  <img
-                    class="contact-us__icon-social"
-                    src="./images/features/icons-social-media/instagram.svg"
-                    alt="instagram link"
-                  />
+                  <div class="contact-us__instagram">
+                    <img
+                      class="contact-us__icon-social"
+                      src="./images/features/icons-social-media/instagram.svg"
+                      alt="instagram link"
+                    />
+                    <img
+                      class="contact-us__icon-social-hover"
+                      src="./images/features/icons-social-media/instagram-blue.svg"
+                      alt="instagram link"
+                    />
+                  </div>
                 </a>
               </div>
             </div>
@@ -580,6 +651,6 @@
       </nav>
     </footer>
 
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
